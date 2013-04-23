@@ -1,0 +1,43 @@
+<h1 class="header">%lbl_ACCOUNT_SIGNIN%</h1>
+<h2 class="header">%lbl_ACCOUNT_SIGNIN2%</h2>
+%data_errMsg% 
+<div id="formDiv">
+<form id="frmCLIENT_lid1" class="frm" name="" action="%LNK_MYACCNT_SIGNIN_SUBMIT%" method="POST">
+<h2 class="header">%lbl_MYACCOUNT_WHATISYOUR_EMAILADDRESS%</h2>
+<table id='form'>
+<tr>
+    <td><label for="CLIENT_EMAIL_ADDRESS_r1_lid1" class="frmLbl" style="font-weight:bold;text-align:right;">%lbl_MYACCNT_ENTER_EMAIL%</label></td>
+    <td><input id="CLIENT_EMAIL_ADDRESS_r1_lid1" class="frmTxt" name="CLIENT_EMAIL_ADDRESS_r1_lid1[]" value="%data_EMAIL_ADDRESS%" type=text></td>
+</tr>
+</table>
+<h2 class="header">%lbl_MYACCOUNT_DOYOU_HAVE_A_PASSWORD%</h2>
+<table id='form'>
+<tr>
+    <td class="left"><input type="radio" name="NEWCLIENT_lid1" value="yes" %data_checked2% ></td>
+    <td colspan=2> <h3 style='display:inline;vertical-align:middle;'>%lbl_MYACCNT_I_AM_NEW%</h3></td>
+</tr>
+<tr>
+    <td class="left"> <input type="radio" name="NEWCLIENT_lid1" value="no" %data_checked1% ></td>
+    <td style="width:145px;"> <h3 style='display:inline;'>%lbl_MYACCNT_EXISTING_CUSTOMER_PWD%</h3></td>
+    <td style="text-align:left;vertical-align:top;margin:0;"><input id="CLIENT_PASSWORD_r1_lid1" class="frmTxt" name="CLIENT_PASSWORD_r1_lid1[]" value="" type=password onKeyPress="return submitenter(this,event);"></td>
+</tr>
+<tr>
+    <td></td>
+    <td colspan=2><!--<a href="javascript:procFrm('frmCLIENT_lid1');"><img src="/images/skn1/btnSignIn.jpg" alt="Sign in using our secure server"></a>-->
+        <input type="submit" value="%lbl_SIGNIN%">
+    </td>
+</tr>
+<tr>
+    <td></td>
+    <td colspan=2><a href="%lnk_PWD_ASSIST%">%lbl_LOGIN_FORGOT_YOUR_PASSWORD%</a></td>
+</tr>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+</table>
+<input type="hidden" id="lid"  name="lid" value="_lid1">
+<input type="hidden" id="ROWS_lid1"  name="ROWS_lid1" value="1">
+</form>
+</div>

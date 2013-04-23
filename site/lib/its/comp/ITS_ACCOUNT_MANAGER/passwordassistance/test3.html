@@ -1,0 +1,479 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">                               
+
+<head>                                             
+    <title>Take The Time Secure Check OutTake The Time</title>
+    <link rel="stylesheet" type="text/css" href="/css/_common/common.css">
+
+<style type="text/css">
+div#oneCol
+{
+    margin:0px auto;
+    text-align:center;
+    border:0px solid black;
+}
+
+div.mainMsg
+{
+    background-color:#669933;
+    color:white;
+    font-size:14px;
+    padding:5px 5px;
+    margin:10px auto;
+    width:600px; 
+}
+
+div.errMsg
+{
+    background-color:#e7e7e7;
+    border:solid 1px black;    
+    color:black;
+    font-size:14px;
+    padding:5px 5px;
+    margin:10px auto;
+    width:600px; 
+}
+
+.boxContainer{ 
+    display:block;
+    float:left;
+    margin:0 auto;
+    /*color:#666;*/ 
+    color:black;
+    background: url(/images/skn1/boxRight.gif) top right no-repeat;     
+}
+.boxDesc
+{
+    margin:0;
+    padding:9px 9px 0 9px;
+    background: url(/images/skn1/boxLeft.gif) top left no-repeat;    
+}
+.boxLink
+{
+    margin:0;
+    padding:0 0 0 19px;
+    background: url(/images/skn1/boxLeft.gif) bottom left no-repeat;    
+}
+
+.boxLink div
+{
+    display:block;
+    padding:0 9px 9px 0;
+    margin:0 0 2px 0;
+    font-style: normal;
+    background: url(/images/skn1/boxRight.gif) bottom right no-repeat;    
+} 
+
+
+div#content
+{
+    border:0px solid black;    
+    width:100%;
+}
+
+table#form, table#form th, table#form td
+{
+    background:white;
+    text-align:left;
+    vertical-align:top;
+    height:30px;        
+}
+
+table#form td.left, table#form th.left
+{
+    text-align:right;
+    vertical-align:middle;
+    padding:0;
+}
+table#form td.left label, table#form th.left label, table#form td label
+{
+    font-weight:bold
+}
+.fine
+{
+    font-size:12px;
+    padding:0;
+    vetical-align:top;
+}
+
+
+h1
+{
+    font-size:20px;
+}
+h2
+{
+    font-size:18px;
+}
+
+h3 span
+{
+    font-weight:normal;
+    display:block;
+}
+
+label
+{
+    font-size:14px;
+}
+
+table#form th h3, table#form td h3, table#form td label
+{
+    font-size:14px;    
+}
+
+table#form th a, table#form td a
+{
+    font-size:12px;
+}
+
+div#header
+{
+    border:solid 0px black;
+    width:670px;
+    margin:0 auto;
+    text-align:center;
+    display:block;
+}
+
+img.logo 
+{
+    display:inline;
+}
+
+img.paymentsAccepted
+{
+    display:inline;
+}
+
+ul#checkout
+{
+    float:left;
+    margin-top:2px;
+    display:inline;
+    width:700px;
+    border:solid 0px red;
+    list-style: none;
+}
+ul#checkout li
+{
+    float:left;
+    border:solid 0px black;
+    display:inline;
+    margin-right:20px;
+}
+
+/***FLOAT CLEARING***/
+div#oneCol:after,
+ul#checkout:after,
+ul#checkout li:after{ /*for browsers that support after*/
+    content: ".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility: hidden;    
+}
+
+* html div#oneCol,
+* html ul#checkout,
+* html ul#checkout li {height:1%} /* for IE+6 */
+
+*:first-child+html div#oneCol {min-height:1px;} /*for IE7*/
+
+
+* html ul#checkout,
+* html ul#checkout li {min-height:1px;} /*for IE7*/
+/***END FLOAT CLEARING***/ 
+
+div#leftCenterCol   
+{
+    margin-top:10px;    
+}
+div#rightCol   
+{
+    margin-top:40px;    
+}
+
+h1.header
+{
+    clear:both;
+    margin-left:7%;
+}
+
+h2.header
+{
+    clear:both;
+    margin-left:7%;
+}
+
+h4.header
+{
+    clear:both;
+    margin-left:7%;
+}
+
+h3.header
+{
+    clear:both;
+    margin-left:7%;
+}
+
+div#formDiv
+{
+    clear:both;
+    width:470px;
+    margin:0 auto;
+    text-align:center;  
+}
+div#formDiv.viewAddr
+{
+    width:590px;
+    margin:0 auto;
+    text-align:left;
+}
+
+div#formDiv.viewAddr h2.header, div#formDiv.viewAddr h1.header  
+{
+    margin:0px;
+}
+
+/** View Address**/
+table#viewAddr, table#viewAddr td, table#viewAddr th
+{
+    background:white;
+    text-transform:capitalize;
+    text-align:left;
+}
+table#viewAddr td span.postalCode
+{
+    text-transform:uppercase;
+    display:inline;
+}
+/** End View Address**/
+
+span.postalCode
+{
+    text-transform:uppercase;
+    display:inline;
+}
+
+
+/** PayInfo**/
+
+table#formCode
+{
+    background:white;
+    border:0px solid black;
+}
+
+table#formCode td, table#formCode th
+{
+    background:white;
+    height:12px;
+    border:0;
+    padding:0;
+    border:0px solid black;
+}
+
+table#formCode h3
+{
+    font-weight:normal;
+    font-size:14px;
+    margin:0;
+    padding:0;
+} 
+
+table#formCode h3.fine  
+{
+    font-size:12px;
+}
+
+table#formCode h4
+{
+    font-weight:normal;
+    font-size:14px;
+    margin:0;
+    padding:0;
+} 
+/** End PayInfo**/
+
+/** ORDER SUMMARY **/
+div#orderSummary
+{
+    clear:both;
+    border:solid black 0px;
+    width:95%;
+    margin:0 auto;
+    display:block;
+}
+
+div#orderSummary td.addr, div#orderSummary th.addr
+{
+    text-transform:capitalize;
+}
+
+table, th, td
+{
+    background:white;
+    text-align:left;
+    vertical-align:top;
+    font-size:14px;
+    /*height:30px;*/
+}
+
+th a, td a
+{
+    display:inline;
+    font-weight:bold;
+}
+
+/** END ORDER SUMMARY **/
+
+a 
+{
+    display:inline;
+    font-size:14px;
+    text-align:left;
+}
+
+
+</style>    
+    
+<script type='text/javascript'>
+/*** SHOPPING CART SCRIPTS ***/
+function add2Crt(id)
+{
+    document.getElementById(id).submit();    
+}
+function addCode()
+{                    
+    //alert('here');
+    document.getElementById('secondCode').style.display = 'inline';
+}
+function removeCode()
+{                    
+    //alert('here');
+    document.getElementById('secondCode').style.value = '';
+    document.getElementById('secondCode').style.display = 'none';
+}
+/*** END SHOPPING CART SCRIPTS ***/
+
+function submitenter(myfield,e)
+{
+var keycode;
+if (window.event) keycode = window.event.keyCode;
+else if (e) keycode = e.which;
+else return true;
+
+if (keycode == 13)
+   {
+   myfield.form.submit();
+   return false;
+   }
+else
+   return true;
+}
+</script>
+
+    <script type="text/javascript" src="/_js/jquery/latest/jquery-1.3.2.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+
+<!-- Header Menu -->
+<!--%wdgt_HEADER-->
+<!-- Header-->
+    <div id="header">
+    <ul id="checkout">
+        <li><img class="logo" width="240" height="68" alt="SECURE CHECK-OUT TAKE THE TIME" src="/images/skn1/logoTakeTheTime.gif"></li>
+        <li><img class="paymentsAccepted"  width="168" height="70" alt="We Proudly Accept Visa, MasterCard, Amex" src="/images/skn1/paymentMethods2.jpg"></li>
+        <li>
+            <div id="digicertsitesealcode" style="width:81px;display:inline;vertical-align:top;float:left;">
+                <script language="javascript" type="text/javascript" src="https://www.digicert.com/custsupport/sealtable.php?order_id=00167388&amp;seal_type=a&amp;seal_size=large&amp;seal_color=green"></script>
+                <span>&nbsp;</span>
+                <script language="javascript" type="text/javascript">coderz();</script>
+            </div>        
+        </li>
+    </ul>
+                  
+    </div>  
+    <!--Main Content -->
+    <div id="mainContent" class="ctlgHeaderDisabled">
+        <div id="oneCol">
+            <div class="boxContainer">
+                <div class="boxDesc">        
+                    <div id=content>
+<h1 class="header">Create New Account</h1>
+<h2 class="header">New to TakeTheTime.ca? Registering is quick and easy</h2>
+  
+<h3 class="header" style="font-weight:normal;">Enter your name and e-mail address and choose a password for your account.</h3>
+<div id="formDiv">
+<form id="frmCLIENT_lid1" class="frm" name="" action="/_src/bl/frm/client/CLIENT_SubmitCreateClient.php5?refresh=20091222134838" method="POST">
+<table id="form">
+<tr>
+    <td class="left">
+        <label id="" for="CLIENT_FULL_NAME" class="frmLbl" style="" name="" >Full Name:</label>
+    </td>
+    <td style="text-align:left">
+        <input id="CLIENT_FULL_NAME_r1_lid1" class="frmTxt" name="CLIENT_FULL_NAME_r1_lid1[]" value="" type=text>
+    </td>
+</tr>
+<tr>
+    <td class="left">
+        <label id="" for="CLIENT_EMAIL_ADDRESS" class="frmLbl" style="" name="" >E-mail address:</label>
+    </td>
+    <td style="text-align:left"> 
+        <input id="CLIENT_EMAIL_ADDRESS_r1_lid1" class="frmTxt" name="CLIENT_EMAIL_ADDRESS_r1_lid1[]" value="" type=text>
+    </td>
+</tr>
+<tr>
+    <td class="left">
+        <label id="" for="CLIENT_EMAIL_ADDRESS_REENTRY" class="frmLbl" style="" name="" >Re-enter E-mail address:</label>
+    </td>
+    <td style="text-align:left">
+        <input id="CLIENT_EMAIL_ADDRESS_REENTRY_r1_lid1" class="frmTxt" name="CLIENT_EMAIL_ADDRESS_REENTRY_r1_lid1[]" value="" type=text>
+    </td>
+</tr>
+<tr>
+    <td class="left">
+        <label id="" for="CLIENT_PASSWORD" class="frmLbl" style="" name="" >Password:</label>
+    </td>
+    <td style="text-align:left"> 
+        <input id="CLIENT_PASSWORD_r1_lid1" class="frmTxt" name="CLIENT_PASSWORD_r1_lid1[]" value="" type="password">
+    </td>
+</tr>
+<tr>
+    <td class="left">
+        <label id="" for="CLIENT_PASSWORD_REENTRY" class="frmLbl" style="" name="" >Re-enter Password:</label>
+    </td>
+    <td style="text-align:left">
+        <input id="CLIENT_PASSWORD_REENTRY_r1_lid1" class="frmTxt" name="CLIENT_PASSWORD_REENTRY_r1_lid1[]" value=""  type="password">
+    </td>
+</tr>
+</table>
+<input type="hidden" id="LG_ID_lid1"  name="CLIENT_TXT_LG_ID_r1_lid1" value="1">
+<input type="hidden" id=""  name="lid" value="_lid1">
+<input type="hidden" id="ROWS_lid1"  name="ROWS_lid1" value="1">
+<input type="submit" value="Create new Account"> 
+</form>  
+</div>
+</div> 
+
+                </div>
+                <div class="boxLink">&nbsp;
+                    <div>&nbsp;</div>
+                </div>
+            </div>        
+        </div>
+
+        <div id="">
+        </div>
+     </div><!--Main content-->
+</div>
+</body>
+</html>
+ 
+
+
